@@ -1,0 +1,85 @@
+.property-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+    background-color: #e4dfdf;
+    /*position: relative;*/ /* Make the card a positioning context */
+}
+
+.image-container {
+    position: relative; /* Make the image container a positioning context */
+}
+
+.property-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex-grow: 1; /* Ensures the link stretches to cover the card */
+}
+
+.property-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.property-card img {
+    
+    width: 100%;
+    height: 150px; /* Ensure consistent image size */
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+
+.property-card .property-info {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin-top: 30px; /* Add some space above the info */
+    text-align: center; /* Aligns text for better readability */
+}
+
+.property-card .property-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.property-card .property-info p {
+    margin: 2px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.favorite-button {
+    position: absolute; /* Position the button absolutely */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.834); /* Default color when not a favorite */
+    font-size: 18px; /* Adjust size as needed */
+}
+
+.favorite-button.favorite .favorite-icon {
+    color: rgb(255, 0, 221); /* Color when it is a favorite */
+}
+
+.favorite-button:hover {
+    color: darkred; /* Change color on hover */
+}

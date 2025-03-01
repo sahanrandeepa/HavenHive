@@ -1,0 +1,15 @@
+footer {
+    background-color: #333333; /* Dark gray background for the footer */
+    color: #e0e0e0; /* Lighter gray text for readability */
+    text-align: center; /* Center-align the content */
+    padding: 15px 0; /* Add vertical padding for spacing */
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+  
+  footer p {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 14px; /* Slightly smaller font size */
+    line-height: 1.5; /* Improve text readability */
+  }
+  

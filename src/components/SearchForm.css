@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.filter-form {
+  margin: 50px auto;
+  padding: 30px;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  background-color: #0002044c;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+}
+
+.filter-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.filter-fields {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter-form label {
+ 
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #e8e1e1;
+}
+
+.filter-form input,
+.filter-form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.filter-form input:focus,
+.filter-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.submit-button, .reset-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: #da190b;
+  transform: translateY(-2px);
+}

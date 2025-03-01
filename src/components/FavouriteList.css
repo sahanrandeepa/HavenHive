@@ -1,0 +1,116 @@
+.favorites-container {
+  border: none;
+  border-radius: 8px;
+  background:none;
+  padding: 0px;
+  width: auto; 
+  margin: 0px; 
+}
+
+.favorites-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.favorites-list {
+  max-height: 400px; 
+  overflow-y: auto; 
+  margin-bottom: 10px; 
+  
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 12px;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+  
+}
+
+.favorite-item:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.favorite-thumbnail {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.favorite-info {
+  flex: 1;
+}
+
+.favorite-type {
+  font-size: medium;
+  font-weight: 600;
+  margin: 0;
+}
+
+.favorite-price {
+  color: #666;
+  margin: 4px 0 0 0;
+  font-size: 0.9em;
+}
+
+.remove-favorite {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-favorite:hover {
+  background-color: #ff1a1a;
+}
+
+.clear-favorites {
+  
+  background-color: #ff4d4d;
+  font-size: small;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 10px;
+  margin-left: 0px;
+  cursor: pointer;
+  width:auto;
+}
+
+@media (max-width: 768px) {
+  .favorites-container {
+      width: 300px; /* Make the favorites container responsive */
+      margin: 10px auto; /* Center the container */
+  }
+
+  .favorites-title {
+      font-size: 1.3em; /* Slightly smaller title on smaller screens */
+  }
+
+  .favorite-item {
+      padding: 6px; /* Reduce padding for smaller screens */
+  }
+
+  .favorite-thumbnail {
+      width: 50px; /* Smaller thumbnail */
+      height: 50px; /* Smaller thumbnail */
+  }
+
+  .favorite-price {
+      font-size: 0.8em; /* Smaller price text */
+  }
+
+  .remove-favorite, .clear-favorites {
+      padding: 4px 8px; /* Smaller button padding */
+  }
+}
+

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #bfcad4, #008080);
+  margin: 0;
+  
+  
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.properties-grid {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center; 
+  justify-items: center;
+
+}
+
+.property-details {
+  text-align: center;
+}
+
+.property-details img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+
+.favorites-list {
+  position: sticky;
+  top: 20px;
+  background-color: #e4dfdf;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 350px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.intro-content {
+  font-family: "Poppins", serif;
+  display: flex;
+  flex-direction: column; /* Ensures items are stacked vertically */
+  justify-content: center; /* Centers items vertically */
+  align-items: center; /* Centers items horizontally */
+  text-align: center; /* Centers text content */
+  max-width: 600px;
+  max-height: 300px;
+  margin: 0 auto; /* Centers the content horizontally within its container */
+  height: 100vh; /* Ensures full vertical height */
+}
+
+.intro-content h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro-content p {
+
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.explore-button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.explore-button:hover {
+  background-color:#ff1a1a;
+}
+
+
